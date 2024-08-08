@@ -197,10 +197,12 @@ background: linear-gradient(0.24turn, rgba(255, 255, 255, 1) 0%, rgba(139, 139, 
     background-color: rgba(250, 66, 66, 0.89);
     border-radius: 25px;
     font-size: 22px;
+    line-height: 28px;
     color: white;
     box-shadow: -2px 17px 14px -6px rgba(250, 66, 66, 0.84);
     border: none;
     cursor: pointer;
+    
 }
 
 /* .button:hover{
@@ -749,7 +751,7 @@ background: linear-gradient(0.24turn, rgba(255, 255, 255, 1) 0%, rgba(139, 139, 
     display: none;
     margin: 0 auto ;
     background-color:rgba(255, 191, 115, 1) ;
-    height: 145px;
+    height: 125px;
     width: 100%;
     /* border-radius: 10px; */
     position: fixed;
@@ -765,7 +767,7 @@ background: linear-gradient(0.24turn, rgba(255, 255, 255, 1) 0%, rgba(139, 139, 
     flex-direction: column;
     align-items: center;
     /* padding: 5px; */
-    height: 130px;
+    height: 110px;
 }
 .fixed button{
     height: 70px;

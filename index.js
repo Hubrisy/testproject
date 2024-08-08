@@ -5,12 +5,12 @@ const buttons = document.querySelectorAll('.button');
         const addAnimation = () => {
             buttons.forEach(button => {
                 if (!animationOn) {
-                    button.style.transition = "all 0.5s ease";
+                    button.style.transition = "all 0.8s ease";
                     button.style.transform = "scale(1.05)";
                     button.style.fontSize = "120%"; 
                 } else {
                     button.style.transform = "scale(1)";
-                    button.style.fontSize = "115%"; 
+                    button.style.fontSize = "119%"; 
                 }
             });
 
