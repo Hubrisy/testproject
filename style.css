@@ -746,6 +746,7 @@ background: linear-gradient(0.24turn, rgba(255, 255, 255, 1) 0%, rgba(139, 139, 
 
 /* Fixed */
 .fixed_block{
+    display: none;
     margin: 0 auto ;
     background-color:rgba(255, 191, 115, 1) ;
     height: 135px;

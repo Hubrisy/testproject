@@ -20,57 +20,6 @@ const buttons = document.querySelectorAll('.button');
         setInterval(addAnimation, 700);
 
 
-// const hideBtn = document.querySelectorAll(".plus_btn");
-// const questAnswer = document.querySelectorAll('.question_answer');
-
-
-// let isActive = false;
-
-// const getQuest = () => {
-//     questAnswer.forEach(quest => {
-//         if(!isActive){
-//             quest.style.display = "block"
-//         }else{
-//             quest.style.display = "none"
-//         }
-//     })
-//     isActive = !isActive
-// }
-
-// hideBtn.addEventListener('click', getQuest())
-
-// hideBtn.addEventListener('click', () => {
-//     if(!isActive){
-//         questAnswer.style.display = "block"
-//     }else{
-//         questAnswer.style.display = "none"
-//     }
-
-//     isActive = !isActive
-//     // questAnswer.style.display = "block"
-// })
-
-
-// const hideBtn = document.querySelector(".plus_btn");
-// const questAnswer = document.querySelectorAll('.question_answer'); // Используем querySelectorAll для получения коллекции элементов
-
-// let isActive = false;
-
-// const getQuest = () => {
-//     questAnswer.forEach(quest => { // Перебираем все элементы
-//         if (!isActive) {
-//             quest.style.display = "block";
-//         } else {
-//             quest.style.display = "none";
-//         }
-//     });
-//     isActive = !isActive; // Переключаем состояние
-// }
-
-// // Передаем ссылку на функцию, а не результат её выполнения
-// hideBtn.addEventListener('click', getQuest);
-
-
 const button = document.querySelectorAll('.plus_btn');
         const answers = document.querySelectorAll('.question_answer');
 
@@ -85,6 +34,36 @@ const button = document.querySelectorAll('.plus_btn');
                 // Показываем только нужный ответ
                 if (!isVisible) {
                     answer.style.display = 'block';
+                }
+            });
+        });
+
+
+
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const fixedBlock = document.querySelector('.fixed_block');
+            const auditoryBlock = document.querySelector('.auditory_block');
+        
+            if (!fixedBlock || !auditoryBlock) {
+                console.error('Elements not found');
+                return;
+            }
+        
+            window.addEventListener('scroll', () => {
+                const rect = auditoryBlock.getBoundingClientRect();
+                const windowHeight = window.innerHeight;
+        
+                if (rect.top <= windowHeight) {
+                    fixedBlock.style.display = 'block'; // Показываем блок
+                    fixedBlock.style.opacity = '1'; // Делаем блок видимым
+                } else {
+                    fixedBlock.style.opacity = '0'; // Прячем блок
+                    setTimeout(() => {
+                        if (fixedBlock.style.opacity === '0') {
+                            fixedBlock.style.display = 'none'; // Скрываем блок полностью после плавного исчезновения
+                        }
+                    }, 300); // Время, совпадающее с длительностью перехода
                 }
             });
         });
