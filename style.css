@@ -749,7 +749,7 @@ background: linear-gradient(0.24turn, rgba(255, 255, 255, 1) 0%, rgba(139, 139, 
     display: none;
     margin: 0 auto ;
     background-color:rgba(255, 191, 115, 1) ;
-    height: 135px;
+    height: 145px;
     width: 100%;
     /* border-radius: 10px; */
     position: fixed;
@@ -764,9 +764,10 @@ background: linear-gradient(0.24turn, rgba(255, 255, 255, 1) 0%, rgba(139, 139, 
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    /* padding: 5px; */
+    height: 130px;
 }
 .fixed button{
-    height: 60px;
+    height: 70px;
     width: 200px;
 }
