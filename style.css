@@ -788,6 +788,7 @@ background: linear-gradient(0.24turn, rgba(255, 255, 255, 1) 0%, rgba(139, 139, 
     padding-bottom: 150px;
     max-width: 300px;
     margin: 0 auto;
+    font-size: 10px;
 }
 .allrights{
     color: white;
@@ -856,10 +857,10 @@ background: linear-gradient(0.24turn, rgba(255, 255, 255, 1) 0%, rgba(139, 139, 
   
   @keyframes spinZ {
     0% {
-      transform: rotateZ(360deg);
+      transform: rotateZ(0);
     }
     100% {
-      transform: rotateZ(0deg);
+      transform: rotateZ(360deg);
     }
   }
   
